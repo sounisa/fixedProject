@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .menu-container { /*MENU*/
+    color: white;
+    background-color: rgb(45, 45, 134);
+    padding: 20px 0;
+    display: flex;
+    justify-content:left;
+    padding-left: 2em;
+  }
+  
+  img {
+    width: 100px;
+  }
+  .menu {
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .home-container { /*Pokedex logo button*/
+    font-family: 'Pokemon Solid', sans-serif;
+    cursor: pointer;
+  }
+
+  .header-container { /*Where Pokedex word is*/
+    color: rgb(45, 45, 134);
+    background-color: white;
+    text-align: center;
+    
+  }
+
+  .logo { /*Pokedex word*/
+    font-family: 'Pokemon Solid', sans-serif;
+    font-size: 800%;
+    -webkit-text-fill-color: rgb(232, 201, 24);
+    -webkit-text-stroke-color: rgb(45, 45, 134);
+    -webkit-text-stroke-width: 8px;
+    letter-spacing: .05em;
+    align-self: center;
+  }
+
+  .first-letter {
+    font-size: 150%;
+    letter-spacing: -.08em;
+  }
+  
+  .center {
+    margin: auto;
+    width: 60%;
+    height: 269px;
+    padding: 20px;
+    padding-top: 6em;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .hideform {
+    display: none;
+  }
+  
+
+  #close-postbtn{
+    width:20px;
+    position: relative;
+    float: right;
+    background: red;
+    color: white;
+    cursor: pointer;
+    top: -80px
+  }
+
+  #show {
+    position: absolute;
+    cursor: pointer;
+    margin-bottom: auto;
+    background-color: none;
+    top: 180px;
+    right: 850px
+  }
+
+  .newPokemonForm{
+    font-size: x-large;
+  }
+
+  .editFormTitle {
+    padding-bottom: .5em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .editHideForm {
+    margin: auto;
+    width: 60%;
+    height: 269px;
+    padding: 20px;
+    padding-top: 2em;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display:none;
+  }
+
+ #editBtnDiv {
+  padding-top: 1em;
+ }
+
+ .editFormTitle {
+  font-size: 20px;
+ }
+
+ .nameOfPokemonEditing {
+  font-family: 'Pokemon Solid', sans-serif;
+  letter-spacing: .1em;
+  font-size: 70px;
+ }
+
+  #close-editbtn {
+    width:20px;
+    position: relative;
+    float: right;
+    background: red;
+    color: white;
+    cursor: pointer;
+    top: -155px;
+    right:-10px;
+  }
+  .DivToScroll{   
+    width:auto;
+    height:max-content;
+    background-color: rgb(45, 45, 134);
+    border: 1px solid #DDDDDD;
+    border-radius: 4px 0 4px 0;
+    color: #3B3C3E;
+    left: -1px;
+    padding: 10px 7px 5px;
+    
+}
+
+   .DivWithScroll{
+    background-color: rgb(45, 45, 134);
+    height:400px;
+    width: auto;
+    overflow:scroll;
+    overflow-x:hidden;
+}
+  .all-pokemons-container {
+    height: 400px;
+    background-color: rgb(45, 45, 134);
+    text-decoration: rgba(157,207,228,255);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  
+  .pokemon-card {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 700px;
+    height: 300px;
+    border: 10px solid rgb(45, 45, 134);
+    
+  }
+
+  .pokemon {
+    border: 1px solid black;
+    width: 900px;
+    height: 300px;
+  }
+
+  .pokeName { /*styling pokemons actual name*/
+    font-family: 'Pokemon Solid', sans-serif;
+    letter-spacing: .05em;
+    font-size: 500%;
+  }
+
+  .pokeType {
+    font-size: 200%;
+  }
+
+  .pokeHp {
+    font-size: 200%;
+  }
+
+  .deleteDiv { /*styling delete button div*/
+    float:right;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-item {
+    border: 1px solid #fff;
+    background-color: #D6E9FE;
+    height: 200px;
+    flex: 1;
+  }
+
+  .footer-one,
+.footer-three {
+  background-color:rgb(45, 45, 134);
+  flex: initial;
+  width: 300px;
+}
+
+.x { /*DELETE BUTTON*/
+  width:20px;
+  position: relative;
+  float: right;
+  background: red;
+  color: white;
+  top: -20px;
+  right: -650px;
+  cursor: pointer;
+}
+

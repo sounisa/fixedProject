@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+    </style>
+    <script async src="app.js"></script>
+    <link rel='stylesheet' href='styles.css'/>
+    <title>Pokedex</title>
+  </head>
+  <body>
+    <div class='menu-container'>
+        <div class='menu'>
+          <div class='home-container'>
+            <img src ='Pokemon-logo-497D61B223-seeklogo.com.png'>
+          </div>
+        </div>
+    </div>
+    <div class='header-container'>
+        <div class='logo'><span class ="first-letter">P</span>okedex</div>
+    </div>
+    <div class="editHideForm">
+        <div class = "editFormTitle">You Are Making Changes to Pokemon:</div>
+        <div class = nameOfPokemonEditing></div>
+        <button id="close-editbtn" style="float: right;">X</button>
+        <form class="editPokemonForm">
+            <div id="editNameDiv">
+                <label for="editPokemonName">Pokemon's Name:</label>
+                <input id="editPokemonName" type="text" class="validate" required maxlength="12">
+            </div>
+            <div id="editTypeDiv">
+                <label for="editPokemonType">Pokemon Type:</label>
+                <select name="editPokemonType" id="editPokemonType">
+                    <option value="Dark">Dark</option>
+                    <option value="Electric">Electric</option>
+                    <option value="Fire">Fire</option>
+                    <option value="Grass">Grass</option>
+                    <option value="Normal">Normal</option>
+                    <option value="Rock">Rock</option>
+                    <option value="Water">Water</option>
+                </select>
+            </div>
+            <div id="editHpDiv">
+                <label for="editPokemonHp">Pokemon's HP:</label>
+                <select name="editPokemonHp" id="editPokemonHp">
+                    <option value="10">10 HP</option>
+                    <option value="20">20 HP</option>
+                    <option value="30">30 HP</option>
+                    <option value="40">40 HP</option>
+                    <option value="50">50 HP</option>
+                    <option value="60">60 HP</option>
+                    <option value="70">70 HP</option>
+                    <option value="80">80 HP</option>
+                    <option value="90">90 HP</option>
+                    <option value="100">100 HP</option>
+                </select>
+            </div>
+            <div id="editBtnDiv">
+                <button id="editBtnSubmit" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div class="center hideform">
+    <button id="close-postbtn" style="float: right;">X</button>
+    <form class="newPokemonForm" action ="">
+        <div id="nameDiv">
+            <label for="pokemon-name">Pokemon's Name:</label>
+            <input id="pokemon-name" type="text" class="validate" required maxlength="12">
+        </div>
+        <div id="typeDiv">
+            <label for="pokemon-type">Pokemon Type:</label>
+            <select name="pokemon-type" id="pokemon-type">
+                <option value="Dark">Dark</option>
+                <option value="Electric">Electric</option>
+                <option value="Fire">Fire</option>
+                <option value="Grass">Grass</option>
+                <option value="Normal">Normal</option>
+                <option value="Rock">Rock</option>
+                <option value="Water">Water</option>
+            </select>
+        </div>
+        <div id="hpDiv">
+            <label for="pokemon-hp">Pokemon's HP:</label>
+            <select name="pokemon-hp" id="pokemon-hp">
+                <option value="10">10 HP</option>
+                <option value="20">20 HP</option>
+                <option value="30">30 HP</option>
+                <option value="40">40 HP</option>
+                <option value="50">50 HP</option>
+                <option value="60">60 HP</option>
+                <option value="70">70 HP</option>
+                <option value="80">80 HP</option>
+                <option value="90">90 HP</option>
+                <option value="100">100 HP</option>
+            </select>
+        </div>
+        <div id="postbtnDiv">
+            <button id="postbtn" type="submit">Submit</button>
+        </div>
+        </form>
+    </div>
+    <button id="show"><img src="pokeball.png"></button>    
+    <div class="DivToScroll">
+        <div class="DivWithScroll">
+            <div class='all-pokemons-container'>
+                <span class='pokemon-card'>
+                    <div class ="pokeName">Pikachu</div>
+                    <div class ="pokeType">Electric</div>
+                    <div class="pokeHp">20 HP</div>
+                </span>
+                <!--<span id='testCard' class='pokemon-card'>
+                    <button class = "x">X</button>
+                    <div class ="pokeName">Welcome</div>
+                    <img class ="pokeImg" src="sad.png">
+                    <div class ="pokeType">There are currently no Pokemons in your Pokedex</div>
+                    <div class="pokeHp">...</div> 
+                    <button class ="edit">Edit Pokemon</button>
+                </span>-->
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
+
